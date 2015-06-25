@@ -1,0 +1,22 @@
+﻿<Window x:Class="TfsHistorical.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Team Foundation Server Time Tracking" Height="374" Width="834" Loaded="Window_Loaded" Closed="Window_Closed" WindowState="Maximized">
+    <Grid>
+        <Button Content="Go" Margin="0,10,10,0" Click="Button_Click" HorizontalAlignment="Right" Width="50" Height="24" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Iteration:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,13,345,0" TextWrapping="Wrap" Text="Start:" VerticalAlignment="Top"/>
+        <DatePicker Name="dtpStart" Margin="0,10,229,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="102"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,13,193,0" TextWrapping="Wrap" Text="End:" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtpEnd" Margin="0,10,78,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="102"/>
+        <CheckBox Name="chkChangesOnly" Content="Changes only" HorizontalAlignment="Right" Margin="0,14,387,0" VerticalAlignment="Top"/>
+        <DataGrid Name="dgvWorkItems" Margin="10,39,10,43" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="#FFC0D3D3" VerticalGridLinesBrush="#FF686868" HorizontalGridLinesBrush="#FF686868" IsReadOnly="True" />
+        <ComboBox x:Name="cboIterations" Margin="62,10,483,0" VerticalAlignment="Top" DisplayMemberPath="Path" SelectionChanged="cboIterations_SelectionChanged" />
+        <Button HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnCopy_Click" Height="23" Width="39">
+            <Image Source="Images\copy.png" />
+        </Button>
+        <Button x:Name="btnQuery" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="23" Width="39" Click="btnQuery_Click">
+            Query
+        </Button>
+    </Grid>
+</Window>

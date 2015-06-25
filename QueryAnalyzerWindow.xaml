@@ -1,0 +1,17 @@
+﻿<Window x:Class="TfsHistorical.QueryAnalyzerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QueryAnalyzerWindow" Height="527" Width="786">
+    <Grid KeyDown="Grid_KeyDown">
+        <ToolBar VerticalAlignment="Top" Height="35">
+            <Button x:Name="btnLoad" Content="Load" Height="30" VerticalAlignment="Top" Width="32" Click="btnLoad_Click"/>
+            <Button x:Name="btnSave" Content="Save" Height="30" VerticalAlignment="Top" Width="32" Click="btnSave_Click"/>
+            <Button x:Name="btnPlay" Content="Play" VerticalAlignment="Top" Width="32" Height="30" Click="btnPlay_Click" />            
+        </ToolBar>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="btnClose_Click"/>
+        <TextBox x:Name="txtQuery" Margin="10,40,10,0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" FontFamily="Courier New" FontWeight="Bold" Height="190" VerticalAlignment="Top" AcceptsReturn="True" />
+        <DataGrid x:Name="dgvGrid" Margin="10,235,10,35" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="#FFC0D3D3" VerticalGridLinesBrush="#FF686868" HorizontalGridLinesBrush="#FF686868" IsReadOnly="True" />
+        <TextBlock x:Name="txtCount" Margin="10,0,90,14" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

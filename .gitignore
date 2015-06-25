@@ -5,3 +5,5 @@
 *.suo
 /bin/Debug
 /obj/Debug
+/Source/bin/Debug
+/Source/obj/Debug

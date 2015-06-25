@@ -6,12 +6,12 @@ This project connects to a TFS server to retrieve historical data times (Complet
 
 - Select a TFS of Visual Studio Online project which Agile or CMMI template (contains Completed Times field).
 
-![Image of Yaktocat](https://dvoituron.github.com/TfsHistorical/Document/Images/Connect.png)
+![Image of Connect](/Document/Images/Connect.png)
 
 - Select an Interaction Path. Automatically, the software sets the predefined dates. 
 Click on GO button to retrieve all Completed Work Times for each days.
 
-![Image of Yaktocat](https://dvoituron.github.com/TfsHistorical/Document/Images/Result.png)
+![Image of Result](/Document/Images/Result.png)
 
 Have fun,
 

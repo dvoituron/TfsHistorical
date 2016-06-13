@@ -1,4 +1,4 @@
 # Denote all files that are truly binary and should not be modified.
-*.manifest binary
+*.manifest  binary
 *.application binary
-*.deploy binary
+*.deploy  binary

@@ -2,7 +2,7 @@
 
 This project connects to a TFS server to retrieve historical data times (Completed Work) for each dates in a specific period.
 
-- First, download and execute the last release of [TFS Historical](https://dvoituron.github.com/TfsHistorical/Releases)
+- First, download and execute the last release of [TFS Historical](https://github.com/dvoituron/TfsHistorical/tree/master/Releases/v1.0.2)
 
 - Select a TFS of Visual Studio Online project which Agile or CMMI template (contains Completed Times field).
 
